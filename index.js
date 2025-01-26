@@ -10,4 +10,17 @@ function getComputerChoice(){
     }
 };
 
-getComputerChoice();
+// getComputerChoice();
+
+function getHumanChoice() {
+  let choice = prompt("What's your choice?"); 
+  console.log(choice); 
+    choice = choice.toLowerCase();
+    if (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+        
+        console.log( "Please make valid choice")
+    }
+}
+
+
+getHumanChoice();
