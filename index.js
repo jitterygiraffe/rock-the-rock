@@ -17,10 +17,27 @@ function getHumanChoice() {
   console.log(choice); 
     choice = choice.toLowerCase();
     if (choice !== "rock" && choice !== "paper" && choice !== "scissors") {
+        return prompt("Please make valid choice");
         
-        console.log( "Please make valid choice")
+        // console.log( "Please make valid choice")
     }
+    return choice;
 }
 
 
-getHumanChoice();
+// getHumanChoice();
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    
+  }
+  
+  const humanSelection = getHumanChoice();               
+  const computerSelection = getComputerChoice();
+  
+  playRound(humanSelection, computerSelection);
+
+  
+
